@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Premiers Pas avec JQuery</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="bandeau">Header</div>
+    </header>
+
+    <div id="contenu">Cliquez-Ici</div>
+
+    <footer>
+        <div id="piedpage">Footer</div>
+    </footer>
+    <script src="../jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#contenu").hover(
+                function() {
+                    console.log("Attention, vous entrez dans la zone rouge");
+                }
+            );
+            $("#contenu").click(
+                function() {
+                    $("#contenu").css("border", "5px green solid");
+                    $("#bandeau").append("<p>Up</p>");
+
+                },
+
+            );
+        });
+    </script>
+</body>
+
+</html>
