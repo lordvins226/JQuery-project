@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Effets</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div>
+        <button>Bienvenue</button>
+        <p id="bonjour">Bonjour</p>
+    </div>
+    <div>
+        <button id="affiche">Afficher</button>
+        <ul id="liste">
+            <p>Liste</p>
+            <li>Pomme</li>
+            <li>Vélo</li>
+            <li>Guitare</li>
+        </ul>
+    </div>
+    <script src="../jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("ul").hide();
+            $("#bonjour").hide();
+            $("#affiche").click(
+                function() {
+                    var text = $("#affiche").text();
+                    if (text == "Afficher") {
+                        $("#affiche").text("Masquer")
+                        $("ul").fadeIn("slow", function() {})
+                    } else if (text == "Masquer") {
+                        $("#affiche").text("Afficher");
+                        $("ul").fadeOut("slow", function() {})
+                    }
+                }
+            )
+        });
+    </script>
+</body>
+
+</html>
