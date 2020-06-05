@@ -2,20 +2,22 @@
 <html>
 
 <head>
-    <title>Premiers Pas avec JQuery</title>
+    <title>Blocs et texte</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div id="bandeau">Header</div>
+    <header id="bandeau">
+        <div>Header</div>
+        <div id="up"></div>
     </header>
 
     <div id="contenu">Cliquez-Ici</div>
 
-    <footer>
-        <div id="piedpage">Footer</div>
+    <footer id="piedpage">
+        <div>Footer</div>
+        <div id="down"></div>
     </footer>
     <script src="../jquery-3.5.1.js"></script>
     <script>
@@ -25,14 +27,27 @@
                     console.log("Attention, vous entrez dans la zone rouge");
                 }
             );
-            $("#contenu").click(
+            $("#contenu").mousedown(
                 function() {
                     $("#contenu").css("border", "5px green solid");
-                    $("#bandeau").append("<p>Up</p>");
-
+                    $("#up").text("Up").css("color", "green");
                 },
 
             );
+            $("#contenu").mouseup(
+                function() {
+                    $("#contenu").css("border", "5px red solid");
+                    $("#down").text("Down").css("color", "red");
+                }
+            );
+            $("#up").click(
+                    function() {
+                        $("#up").remove()
+                    }),
+                $("#down").click(
+                    function() {
+                        $("#down").remove()
+                    })
         });
     </script>
 </body>

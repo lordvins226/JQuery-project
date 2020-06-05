@@ -1,4 +1,4 @@
-div#bandeau {
+header#bandeau {
     height: 100px;
     background-color: #00CCFF;
     text-align: center;
@@ -10,7 +10,7 @@ div#contenu {
     border: 5px red solid;
 }
 
-div#piedpage {
+footer#piedpage {
     height: 100px;
     background-color: #33FF99;
     text-align: center;
