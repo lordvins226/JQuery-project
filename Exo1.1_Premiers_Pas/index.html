@@ -7,12 +7,14 @@
 </head>
 
 <body>
-    <p class="">ceci est un paragraphe</p>
-    <script src="../jquery-3.5.1.js"></script>
+    <div>
+        <p class="">ceci est un paragraphe</p>
+    </div>
+    <script src="../Assets/Js/jquery-3.5.1.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $("p").hover(
-                function () {
+                function() {
                     $(this).replaceWith("<p>ceci n'est pas un paragraphe</p>");
                 },
             );
