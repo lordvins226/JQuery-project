@@ -15,3 +15,22 @@ footer#piedpage {
     background-color: #33FF99;
     text-align: center;
 }
+
+#bonjour {
+    font-size: 25px;
+}
+
+#defile {
+    margin: 5px;
+    height: 400px;
+    width: 1000px;
+    align-items: center;
+}
+
+img {
+    margin: 5px;
+    float: left;
+    width: 300;
+    height: 150px;
+    align-items: flex-start;
+}
