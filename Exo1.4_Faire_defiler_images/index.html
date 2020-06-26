@@ -4,13 +4,13 @@
 <head>
     <title>Faire Defiler des images</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../Assets/Css/style.css">
+    <link rel="stylesheet" href="../Assets/Css/main.css">
 </head>
 
 <body>
     <div id="defile">
         <div>
-            <img src="../Assets/Images/Abraham Lake.jpg" title="lake">
+            <img id="first" src="../Assets/Images/Abraham Lake.jpg" title="lake">
         </div>
         <div>
             <img src="../Assets/Images/African lion.jpg" title="lion">
@@ -23,8 +23,10 @@
     <script src="../Assets/Js/jquery-3.5.1.js"></script>
     <script>
         $(document).ready(function() {
-            // $("#img").hide();
-
+            $("#defile").hide();
+            // var images = $("#defile").find("*");
+            var premier = $("img").get(0);
+            $("#first").show();
         });
     </script>
 </body>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulaires</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="civil">Etat civil : </label>
+            <select name="civil" id="civil">
+                <option value="M">M.</option>
+                <option value="Mme">Mme</option>
+            </select>
+        </div>
+        <div>
+            <label for="nom">Nom : </label>
+            <input type="text" name="nom" id="nom" />
+        </div>
+        <div>
+            <label for="prenom">Prenom : </label>
+            <input type="prenom" name="prenom" id="prenom" />
+        </div>
+        <div>
+            <label for="nomC">Nom Complet: </label>
+            <input type="text" name="nom" id="nom" disabled/>
+        </div>
+        <div>
+            <label for="naissance">Date de Naissance</label>
+            <input type="date" />
+        </div>
+        <div>
+            <label for="niveau">Niveau Javascript</label>
+            <input type="range" />
+        </div>
+        <div>
+            <label for="color">Couleur prefere</label>
+            <input type="color" />
+        </div>
+        <div>
+            <label for="">Mot de Passe</label>
+            <input type="password" name="password" id="password" />
+        </div>
+        <div>
+            <label for="">Mot de Passe (Confirmation)</label>
+            <input type="password" name="password" id="password" />
+        </div>
+        <div>
+            <label for="afficher">Afficehr Mot de Passe</label>
+            <input type="checkbox" name="afficher" id="afficher" />
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <textarea name="description" id="description"></textarea>
+        </div>
+        <div>
+            <button>Renitialiser</button>
+            <button>Envoyer</button>
+        </div>
+    </form>
+
+    <script src="../Assets/Js/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function() {
+
+        });
+    </script>
+</body>
+
+</html>

@@ -21,10 +21,10 @@ footer#piedpage {
 }
 
 #defile {
-    margin: 5px;
-    height: 400px;
-    width: 1000px;
+    margin: 50px;
     align-items: center;
+    display: inline-block;
+    padding: 50px;
 }
 
 img {
